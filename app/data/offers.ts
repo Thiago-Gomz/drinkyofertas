@@ -45,4 +45,4 @@ export const offers: Offer[] = [
     store: "Shopee",
     link: "https://shopee.com.br/",
   },
-];
+];// deploy fix
