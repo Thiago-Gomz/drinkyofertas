@@ -1,54 +1,48 @@
 export type Offer = {
   id: number;
   title: string;
-  image: string;
+  description: string;
+  price: string;
   oldPrice: string;
-  newPrice: string;
-  discount: string;
+  image: string;
   store: string;
-  url: string;
-  coupon?: string;
-  source?: string;
+  link: string;
 };
 
 export const offers: Offer[] = [
   {
     id: 1,
-    title: "Kit Gin Tanqueray + Tônica",
+    title: "Kit Gin Tanqueray + Energético",
+    description: "Combo premium para seu churrasco do fim de semana.",
+    price: "R$ 129,90",
+    oldPrice: "R$ 179,90",
     image:
-      "https://http2.mlstatic.com/D_NQ_NP_2X_850000-MLB.jpg",
-    oldPrice: "R$ 159,90",
-    newPrice: "R$ 99,90",
-    discount: "-37%",
-    store: "Mercado Livre",
-    url: "https://mercadolivre.com.br",
-    coupon: "GIN10",
-    source: "manual",
+      "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop",
+    store: "Amazon",
+    link: "https://www.amazon.com.br/",
   },
+
   {
     id: 2,
-    title: "Heineken 12 Latas",
+    title: "Whisky Jack Daniel's 1L",
+    description: "Oferta limitada com frete rápido.",
+    price: "R$ 119,90",
+    oldPrice: "R$ 159,90",
     image:
-      "https://m.media-amazon.com/images/I/71h7jU0V3DL._AC_SL1500_.jpg",
-    oldPrice: "R$ 89,90",
-    newPrice: "R$ 69,90",
-    discount: "-22%",
-    store: "Amazon",
-    url: "https://amazon.com.br",
-    coupon: "",
-    source: "manual",
+      "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?q=80&w=1200&auto=format&fit=crop",
+    store: "Mercado Livre",
+    link: "https://www.mercadolivre.com.br/",
   },
+
   {
     id: 3,
-    title: "Kit Churrasco Completo Premium",
+    title: "Kit Churrasco Premium",
+    description: "Conjunto completo para churrasco profissional.",
+    price: "R$ 249,90",
+    oldPrice: "R$ 349,90",
     image:
-      "https://http2.mlstatic.com/D_NQ_NP_2X_777777-MLB.jpg",
-    oldPrice: "R$ 249,90",
-    newPrice: "R$ 179,90",
-    discount: "-28%",
+      "https://images.unsplash.com/photo-1529692236671-f1de50a1c5ff?q=80&w=1200&auto=format&fit=crop",
     store: "Shopee",
-    url: "https://shopee.com.br",
-    coupon: "CHURRA20",
-    source: "manual",
+    link: "https://shopee.com.br/",
   },
 ];
